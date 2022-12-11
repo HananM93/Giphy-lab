@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import './App.css';
 import DisplayGif from './components/DisplayGif'
-import Form from './components/Form';
+import Button from './components/Button'
 
 function App() {
   const [giphyData, setGiphyData] = useState({});
@@ -23,7 +23,7 @@ function App() {
 
   return (
     <div className="App">
-   
+      <DisplayGif giphy={giphyData}/>
     </div>
   );
 }
