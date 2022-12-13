@@ -1,4 +1,4 @@
-.button {
+button {
     color: #fff;
     padding: 15px 25px;
     border-radius: 100px;
@@ -11,7 +11,25 @@
     cursor: pointer;
 }
 
-.button {
-    display: flex;
-    justify-content: center;
+
+
+h1 {
+    color: #4C43CD;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    width: 50%;
+}
+
+
+button {
+    margin: 50px auto;
+    display: block;
+
 }
