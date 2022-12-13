@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import './App.css';
 import DisplayGif from './components/DisplayGif'
+import Button from './components/Button'
 
 function App() {
   const [giphyData, setGiphyData] = useState({});
@@ -18,7 +19,8 @@ function App() {
 
   return (
     <div className="App">
-      <DisplayGif giphy={giphyData}/>
+      <DisplayGif gif={giphyData}/>
+      <Button giphy={makeApiCall} />
     </div>
   );
 }

@@ -1,13 +1,13 @@
-const GiphyDisplay = ({ giphy }) => {
+const DisplayGif = ({ gif }) => {
     
-    return giphy.data ? (
+    return gif.data ? (
         <>
             <h1>Want A Surprise Gif? Click the button! </h1>
-            <img src={giphy.data.images.downsized.url} alt={giphy.data.title} />
+            <img src={gif.data.images.downsized.url} alt={gif.data.title} />
         </>
     ) : (
         <h1>Yay!</h1>
     )
 }
 
-export default GiphyDisplay;
+export default DisplayGif;
