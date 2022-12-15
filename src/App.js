@@ -12,10 +12,11 @@ function App() {
     const json = await res.json();
     setGiphyData(json)
   }
+//Since the specs for this lab said no giphy on page load only after a button is click, you would need to remove the useEffect - as soon as I commented this out, it worked as the lab specified.
 
-  useEffect(() => {
-    makeApiCall()
-  }, [])
+  // useEffect(() => {
+  //   makeApiCall()
+  // }, [])
 
   return (
     <div className="App">
