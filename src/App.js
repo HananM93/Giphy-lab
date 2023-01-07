@@ -1,4 +1,5 @@
-import { useState, useEffect } from 'react';
+
+import { useState } from 'react';
 import './App.css';
 import DisplayGif from './components/DisplayGif'
 import Button from './components/Button'
@@ -12,10 +13,6 @@ function App() {
     const json = await res.json();
     setGiphyData(json)
   }
-
-  useEffect(() => {
-    makeApiCall()
-  }, [])
 
   return (
     <div className="App">
